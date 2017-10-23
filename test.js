@@ -9,5 +9,6 @@ window.onload = function() {
         ])
         .registChangedCallback(function(pre, cur) {
             console.log(`previous: ${pre} ,  current: ${cur}`);
+            console.log(`getSelected: ${CrmCommonSelector.getSelected()}`);
         });
 }

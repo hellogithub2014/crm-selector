@@ -90,7 +90,7 @@ var CrmCommonSelector = (function() {
 
 
     /**
-     * 注册下拉框选择
+     * 注册下拉框值改变后的回调
      *
      * @param {Function} changedCallback 选项变更后的回调函数
      *      会将之前值和当前值传入当做参数
