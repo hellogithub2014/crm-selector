@@ -1,0 +1,82 @@
+.fll {
+    float: left;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.crm-selector-wrapper .selector-name {
+    padding-top: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.crm-selector-wrapper .crm-selector {
+    position: relative;
+    margin-left: 10px;
+}
+
+.crm-selector-wrapper .crm-selector .selected {
+    font-size: 14px;
+    width: 129px;
+    height: 28px;
+    padding: 0 10px;
+    border: 1px solid #f2f2f2;
+    line-height: 28px;
+    color: #666;
+    background-image: url("./common-selector-images/select_down.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 4px);
+    background-position-y: center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.crm-selector-wrapper .crm-selector .selected.clicked {
+    background-image: url("./common-selector-images/select_up.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 4px);
+    background-position-y: center;
+    background-size: 16px;
+}
+
+.crm-selector-wrapper .crm-selector .select-body {
+    width: 129px;
+    padding: 0 10px;
+    border: 1px solid #f2f2f2;
+    border-top: none;
+    position: relative;
+    top: -1px;
+    padding-top: 1px;
+    background: #fff;
+    display: none;
+    position: absolute;
+    top: 28px;
+    z-index: 100;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.crm-selector-wrapper .crm-selector .select-body li {
+    padding: 6px 0;
+    color: #666;
+}
+
+.crm-selector-wrapper .crm-selector .select-body li:hover {
+    color: #1696bf;
+    cursor: pointer;
+}
+
+.dropback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 10;
+    display: none;
+}
