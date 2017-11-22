@@ -1,0 +1,81 @@
+/*下拉框*/
+
+.crm-select {
+    width: 210px;
+    height: 28px;
+    line-height: 28px;
+    color: #666;
+    background-size: 16px;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.crm-select {
+    position: relative;
+}
+
+.crm-select .crm-select-header {
+    width: 210px;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #f2f2f2;
+    line-height: 28px;
+    color: #666;
+    background-image: url("/business/static/images/select_down.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 4px);
+    background-position-y: center;
+    background-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.crm-select .crm-select-header.show-body {
+    background-image: url("/business/static/images/select_up.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 4px);
+    background-position-y: center;
+    background-size: 16px;
+}
+
+.crm-select .crm-select-body {
+    width: 210px;
+    border: 1px solid #f2f2f2;
+    border-top: none;
+    top: -1px;
+    padding-top: 1px;
+    background: #fff;
+    display: none;
+    position: absolute;
+    top: 28px;
+    z-index: 1000;
+    max-height: 350px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.crm-select .crm-select-body li {
+    padding: 6px 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.crm-select .crm-select-body li:hover {
+    color: #1696bd;
+}
+
+.crm-select .crm-select-body li.checked {
+    color: #1696bd;
+}
+
+.dropback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 999;
+    display: none;
+}

@@ -3,36 +3,22 @@
 
 <head lang="en">
     <link rel="stylesheet" href="../../../static/css/reset.css" />
-    <link rel="stylesheet" href="./crm-common-selector.css" />
+    <link rel="stylesheet" href="./crm-select.css" />
+    <link rel="stylesheet" href="./dependencies/artDialog/css/ui-dialog.css">
+    <link rel="stylesheet" href="../../../../static/css/style.css">
+    <link rel="stylesheet" href="../../../../mng/mng-sys/static/css/mng.css">
 </head>
 
 <body>
+    <div id="select">
 
-    <div class="fll clearfix crm-selector-wrapper">
-        <!-- 下拉框的名称，用于告诉用户此下拉框的目的 -->
-        <span class="fll selector-name"></span>
-        <div class="fll crm-selector">
-            <!-- 选中的值 -->
-            <div class="selected" data-val=""></div>
-            <!-- 具体的下拉列表 -->
-            <ol class="select-body">
-            </ol>
-            <div class="dropback"></div>
-        </div>
-    </div>
-
-    <div>
-        <span>原生下拉框：</span>
-        <select name="test" id="test">
-            <option value="value1">value1</option>
-            <option value="value1">value2</option>
-            <option value="value1">value3</option>
-        </select>
     </div>
 
     <!--外部库-->
     <script src="./dependencies/jquery/jquery.min.js"></script>
-    <script src="./crm-common-selector.js"></script>
+    <script src="./dependencies/artDialog/dist/dialog-plus.js"></script>
+
+    <script src="./crm-select.js"></script>
 
     <script src="./test.js"></script>
 </body>
