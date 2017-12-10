@@ -2,13 +2,11 @@
  * 自定义select选择插件
  * 依赖dialog插件
  *
- * @author RT02512 王卫超
  * @class CrmSelect
  */
 class CrmSelect {
     /**
      * Creates an instance of CrmSelect.
-     * @author RT02512 王卫超
      * @param {
      *      wrapper-selector:string, // 整个选择框的包装元素选择器，需要是一个id
      *      defaultSelect:object, // 默认初始选中的项  对象中包含val，name属性
@@ -42,9 +40,7 @@ class CrmSelect {
         return this.wrapperSelector + ` .dropback`;
     };
     /**
-   猝然人体
      *
-     * @author RT02512 王卫超
      * @memberof CrmSelect
      */
     initSelect() {
@@ -65,7 +61,6 @@ class CrmSelect {
     /**
      * 初始化列表渲染
      *
-     * @author RT02512 王卫超
      * @memberof CrmSelect
      */
     render() {
@@ -102,7 +97,6 @@ class CrmSelect {
     /**
      * 错误提示弹出框
      *
-     * @author RT02512 王卫超
      * @param {any} content 提示语句
      * @memberof CrmSelect
      */
